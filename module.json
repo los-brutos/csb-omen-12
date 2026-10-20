@@ -1,0 +1,63 @@
+{
+  "id": "csb-omen-12",
+  "title": "CSB - Omen 12",
+  "description": "Un petit système qui automatise le système Omen 12 motorisé avec Custom System Builder",
+  "version": "14.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "url": "https://github.com/los-brutos/csb-omen-12/",
+  "manifest": "https://raw.githubusercontent.com/los-brutos/csb-omen-12/refs/tags/14.0.0/module.json",
+  "download": "https://github.com/los-brutos/csb-omen-12/releases/download/14.0.0/csb-omen-12.zip",
+  "readme": "https://github.com/los-brutos/csb-omen-12/blob/main/README.md",
+  "bugs": "https://github.com/los-brutos/csb-omen-12/issues",
+"authors": [
+    {
+      "name": "Los Brutos",
+      "discord": "losbrutos",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "styles": [
+    "styles/csb-omen-12.css"
+  ],
+  "packs": [
+    {
+      "name": "templates-acteurs",
+      "label": "_Omen 12 - Templates Acteurs",
+      "path": "packs/templates-acteurs",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    },
+    {
+      "name": "templates-objets",
+      "label": "_Omen 12 - Templates Objets",
+      "path": "packs/templates-objets",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
