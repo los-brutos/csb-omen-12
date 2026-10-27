@@ -8,6 +8,6 @@ ${#class:= total <= 2 ? "non-et" : total <= 4 ? "non" : total <= 6 ? "non-mais" 
 
 <div class="omen12-result-detail"><i class="fa-regular fa-dice-d12"></i>${!roll}$ ${!modificateur >=0 ? "+" : "-"}$ ${!abs(modificateur)}$ = <strong>${!total}$</strong></div>
 
-<div class="omen12-result omen12-result-${!class}$" data-tooltip="${!roll}$ + ${!modificateur}$ = ${!total}$">
+<div class="omen12-result omen12-result-${!class}$">
   ${!result}$
 </div>
